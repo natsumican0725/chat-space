@@ -13,8 +13,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|integer|null: false|
-|e-mail|integer|null: false, foreign_key: true|
-|image|string|foreign_key: true|
+|email|integer|null: false|
+|image|string|
 
 ### Association
 - has_many :members
@@ -23,7 +23,7 @@
 ##groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|integer|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :members
@@ -34,9 +34,9 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|body|text|foreign_key: true|
-|name|integer|null: false|
-|image|string|foreign_key: true|
+|body|text|
+|name|string|null: false|
+|image|string|
 
 ### Association
 - belongs_to :group
