@@ -18,9 +18,9 @@
 ### Association
 - has_many :members
 - has_many :messages
-- has_many :group, through: :messages
+- has_many :groups, through: :messages
 
-##groupテーブル
+##groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
@@ -30,12 +30,13 @@
 - has_many :messages
 - has_many :users, through: :messages
 
-##messageテーブル
+##messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 |body|text|
+|image|string|
 
 ### Association
 - belongs_to :group
