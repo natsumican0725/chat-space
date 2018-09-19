@@ -2,8 +2,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true, index: true|
+|group_id|integer|null: false, foreign_key: true, index: true|
 
 ### Association
 - belongs_to :group
@@ -33,8 +33,8 @@
 ##messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true, index: true|
+|group_id|integer|null: false, foreign_key: true, index: true|
 |body|text|
 |image|string|
 
