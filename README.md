@@ -12,7 +12,7 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|integer|null: false|
+|name|string|null: false|
 |email|integer|null: false|
 
 ### Association
