@@ -13,7 +13,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|email|integer|null: false|
+|email|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :members
